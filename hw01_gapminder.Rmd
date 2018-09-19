@@ -2,7 +2,7 @@
 title: "hw01_gapminder.Rmd"
 author: "Gurjot Singh"
 date: "16/09/2018"
-output: html_document
+output: github_document
 ---
 
 # R Markdown for gapminder Exploration
