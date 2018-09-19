@@ -2,6 +2,12 @@
 ## A Brief Introduction
 **Gurjot Singh** is a Master's student in the Experimental Medicine program at the University of British Columbia. He studies cancer of the liver and works with [Dr. Baljinder Salh](https://www.vchri.ca/researchers/baljinder-salh) at Vancouver General Hospital.
 
+|    **Things Gurjot Likes**    |                    **Things Gurjot Dislikes**                              |
+|-------------------------------|----------------------------------------------------------------------------|
+|             Food              |                   When Gurjot doesn't get food                             |
+|          Travelling           |          When Gurjot is too broke to travel #lifeofagradstudent            |
+|           Netflix             | When Gurjot doesn't have time to watch Netflix, again, #lifeofagradstudent |
+
 ## Gurjot's Research Project
 Gurjot currently works on the detection of liver cancer. His interests lie in analyzing the regulation of a protein called **d**ouble**c**ortin **l**ike **k**inase **1** abbreviated as *DCLK1*. Gurjot evaluates this protein the blood of liver patients to see if early diagnosis of liver cancer is possible, since *DCLK1* is a cancer stem cell marker.
 
