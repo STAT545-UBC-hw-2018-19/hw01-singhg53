@@ -26,8 +26,8 @@ Gurjot enjoys playing basketball, and of course, since he is from Toronto, he is
 
 ## Gurjot's to do list:
 
-- [x] Complete my assignments
-- [ ] Sleep
+1. - [x] Complete my assignments
+2. - [ ] Sleep
 
 # *I hope you enjoyed this page!*
 
