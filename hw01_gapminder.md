@@ -116,6 +116,11 @@ tail(gapminder)
 We can again specifcy the number of rows as we did before with the
 `head` function.
 
-If we want to look at a specific country and a specific variable such as
-Canada and life expectancy we could do so by using the following
-function:
+We can look at the different variables in the dataset using the `names`
+function.
+
+``` r
+names(gapminder)
+```
+
+    ## [1] "country"   "continent" "year"      "lifeExp"   "pop"       "gdpPercap"
