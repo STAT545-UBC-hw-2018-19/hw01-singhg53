@@ -1,0 +1,12 @@
+---
+title: "hw01_gapminder.Rmd"
+author: "Gurjot Singh"
+date: "16/09/2018"
+output: html_document
+---
+
+Hello everyone today we will be exploring a dataset known as gapminder.
+
+First we have to install the dataset package. So we go to the console and type in:
+
+`install.packages("gapminder")`
