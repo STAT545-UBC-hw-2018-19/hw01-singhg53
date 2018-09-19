@@ -35,7 +35,7 @@ Gurjot will now demonstrate his skills using cool bulletin points
 	+ Here is one which isn't filled in
 		* Here is a boxed one
 
-Gurjot will now stop reffering to himself in third person point of view.
+Gurjot will now stop referring to himself in third person point of view.
 
 # *I hope you enjoyed this page!*
 
