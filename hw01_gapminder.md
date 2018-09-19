@@ -113,8 +113,8 @@ tail(gapminder)
     ## 5 Zimbabwe Africa     2002    40.0 11926563      672.
     ## 6 Zimbabwe Africa     2007    43.5 12311143      470.
 
-We can again specifcy the number of rows as we did before with the
-`head` function.
+We can again specify the number of rows as we did before with the `head`
+function.
 
 We can look at the different variables in the dataset using the `names`
 function.
@@ -124,3 +124,71 @@ names(gapminder)
 ```
 
     ## [1] "country"   "continent" "year"      "lifeExp"   "pop"       "gdpPercap"
+
+Now let’s try to pick it up a notch. We can also sort for variables lets
+say Canada and observe the data when the life expectancy is greater than
+or equal to 60 in Canada.
+
+``` r
+gapminder %>% 
+  filter(lifeExp >= 60 & country == "Canada")
+```
+
+    ## # A tibble: 12 x 6
+    ##    country continent  year lifeExp      pop gdpPercap
+    ##    <fct>   <fct>     <int>   <dbl>    <int>     <dbl>
+    ##  1 Canada  Americas   1952    68.8 14785584    11367.
+    ##  2 Canada  Americas   1957    70.0 17010154    12490.
+    ##  3 Canada  Americas   1962    71.3 18985849    13462.
+    ##  4 Canada  Americas   1967    72.1 20819767    16077.
+    ##  5 Canada  Americas   1972    72.9 22284500    18971.
+    ##  6 Canada  Americas   1977    74.2 23796400    22091.
+    ##  7 Canada  Americas   1982    75.8 25201900    22899.
+    ##  8 Canada  Americas   1987    76.9 26549700    26627.
+    ##  9 Canada  Americas   1992    78.0 28523502    26343.
+    ## 10 Canada  Americas   1997    78.6 30305843    28955.
+    ## 11 Canada  Americas   2002    79.8 31902268    33329.
+    ## 12 Canada  Americas   2007    80.7 33390141    36319.
+
+Maybe we are curcious and want to know which country has the highest
+life expectancy. We could do this using the following:
+
+``` r
+arrange(gapminder, desc(lifeExp))
+```
+
+    ## # A tibble: 1,704 x 6
+    ##    country          continent  year lifeExp       pop gdpPercap
+    ##    <fct>            <fct>     <int>   <dbl>     <int>     <dbl>
+    ##  1 Japan            Asia       2007    82.6 127467972    31656.
+    ##  2 Hong Kong, China Asia       2007    82.2   6980412    39725.
+    ##  3 Japan            Asia       2002    82   127065841    28605.
+    ##  4 Iceland          Europe     2007    81.8    301931    36181.
+    ##  5 Switzerland      Europe     2007    81.7   7554661    37506.
+    ##  6 Hong Kong, China Asia       2002    81.5   6762476    30209.
+    ##  7 Australia        Oceania    2007    81.2  20434176    34435.
+    ##  8 Spain            Europe     2007    80.9  40448191    28821.
+    ##  9 Sweden           Europe     2007    80.9   9031088    33860.
+    ## 10 Israel           Asia       2007    80.7   6426679    25523.
+    ## # ... with 1,694 more rows
+
+We could do the converse and find the shortest life expectancy.
+
+``` r
+arrange(gapminder, lifeExp)
+```
+
+    ## # A tibble: 1,704 x 6
+    ##    country      continent  year lifeExp     pop gdpPercap
+    ##    <fct>        <fct>     <int>   <dbl>   <int>     <dbl>
+    ##  1 Rwanda       Africa     1992    23.6 7290203      737.
+    ##  2 Afghanistan  Asia       1952    28.8 8425333      779.
+    ##  3 Gambia       Africa     1952    30    284320      485.
+    ##  4 Angola       Africa     1952    30.0 4232095     3521.
+    ##  5 Sierra Leone Africa     1952    30.3 2143249      880.
+    ##  6 Afghanistan  Asia       1957    30.3 9240934      821.
+    ##  7 Cambodia     Asia       1977    31.2 6978607      525.
+    ##  8 Mozambique   Africa     1952    31.3 6446316      469.
+    ##  9 Sierra Leone Africa     1957    31.6 2295678     1004.
+    ## 10 Burkina Faso Africa     1952    32.0 4469979      543.
+    ## # ... with 1,694 more rows

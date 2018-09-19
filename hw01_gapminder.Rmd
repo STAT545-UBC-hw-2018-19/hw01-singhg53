@@ -56,7 +56,7 @@ If we want to look at the last or bottom rows of data we use the `tail` function
 tail(gapminder)
 ```
 
-We can again  specifcy the number of rows as we did before with the `head` function.
+We can again  specify the number of rows as we did before with the `head` function.
 
 We can look at the different variables in the dataset using the `names` function.
 
@@ -64,5 +64,29 @@ We can look at the different variables in the dataset using the `names` function
 names(gapminder)
 ```
 
+Now let's try to pick it up a notch. We can also sort for variables, lets say Canada, and observe the data when the life expectancy is greater than or equal to 60.
 
+```{r}
+gapminder %>% 
+  filter(lifeExp >= 60 & country == "Canada")
+```
 
+Maybe we are curcious and want to know which country has the highest life expectancy. We could do this using the following:
+
+```{r}
+arrange(gapminder, desc(lifeExp))
+```
+
+We could do the converse and find the shortest life expectancy.
+
+```{r}
+arrange(gapminder, lifeExp)
+```
+
+We can use a plot function and plot the continents on the x axis versus the life expectancy.
+
+```{r}
+plot(gapminder$continent, gapminder$lifeExp)
+```
+
+Thank-you for exploring this dataset with me!
