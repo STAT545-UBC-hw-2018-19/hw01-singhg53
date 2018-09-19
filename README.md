@@ -29,6 +29,14 @@ Gurjot enjoys playing basketball, and of course, since he is from Toronto, he is
 1. - [x] Complete my assignments
 2. - [ ] Sleep
 
+Gurjot will now demonstrate his skills using cool bulletin points
+
+- Here is a round bulletin point which is filled in
+	+ Here is one which isn't filled in
+		* here is a boxed one
+
+Gurjot will now stop reffering to himself in third person point of view.
+
 # *I hope you enjoyed this page!*
 
 ![](https://media.giphy.com/media/61XU8x3pyldxTcjye8/giphy.gif)
