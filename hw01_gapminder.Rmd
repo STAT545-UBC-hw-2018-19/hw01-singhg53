@@ -13,12 +13,55 @@ Hello everyone today we will be exploring a dataset known as gapminder.
 
 ## Installing gapminder Dataset
 
-First we have to install the dataset package. So we go to the console and type in:
+First we have to install the dataset package. So we type :
 
 `install.packages("gapminder")`
 
-## Exploration of gapminder
+If you do not have tidyverse go ahead and it install it by applying this into your code chunk:
 
-Now we can go ahead and play around with the data
+`install.packages("tidyverse")`
+
+## Loading of gapminder Dataset
+
+Now since we have installed the gapminder dataset, we can load it using the `library` function. We apply this also to tidyverse.
+
+```{r}
+library(gapminder)
+library(tidyverse)
+```
+
+## Playing Around With the Dataset
+
+We can start off by obtaining a summary of the dataset.
+
+```{r}
+summary(gapminder)
+```
+
+If we want to look at the first six rows of the data (by default) we can use the `head` function.
+
+```{r}
+head(gapminder)
+```
+
+However we can modify this function to express only two rows of data by, changing **n**
+
+```{r}
+head(gapminder, n=2)
+```
+
+If we want to look at the last or bottom rows of data we use the `tail` function:
+
+```{r}
+tail(gapminder)
+```
+
+We can again  specifcy the number of rows as we did before with the `head` function.
+
+We can look at the different variables in the dataset using the `names` function.
+
+```{r}
+names(gapminder)
+```
 
 
