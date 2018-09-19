@@ -33,7 +33,7 @@ Gurjot will now demonstrate his skills using cool bulletin points
 
 - Here is a round bulletin point which is filled in
 	+ Here is one which isn't filled in
-		* here is a boxed one
+		* Here is a boxed one
 
 Gurjot will now stop reffering to himself in third person point of view.
 
