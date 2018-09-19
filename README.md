@@ -19,7 +19,7 @@ Gurjot enjoys playing basketball, and of course, since he is from Toronto, he is
 --Unknown:joy::wink:
 
 ## Gurjot's to do list:
-- [x]
+-[x] 
 - [ ] 
 
 # *I hope you enjoyed this page!*
